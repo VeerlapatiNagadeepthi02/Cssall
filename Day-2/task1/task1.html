@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Position Example</title>
+<style>
+  .container {
+    position: relative;
+    width: 210vh; 
+    height: 100vh; 
+    background-color: aquamarine;
+  }
+  .container .image {
+    position: absolute;
+    width: 40vh; 
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .top-right {
+    top: 0;
+    right: 0;
+    background-image: url("environmental.jpg");
+  }
+  .top-left {
+    top: 0;
+    left: 0;
+    background-image: url("getty.jpg");
+  }
+  .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("images.jfif");
+  }
+  .bottom-right {
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%, 0);
+    background-image: url("pxhere.jpg");
+  }
+  .bottom-left {
+    bottom: 0;
+    right: 0;
+    transform: translateX(0,-50%);
+    background-image: url("images\ \(1\).jfif");
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="image top-right"></div>
+    <div class="image top-left"></div>
+    <div class="image center"></div>
+    <div class="image bottom-left"></div>
+    <div class="image bottom-right"></div>
+  </div>
+</body>
+</html>
+
+</body>
+</html>

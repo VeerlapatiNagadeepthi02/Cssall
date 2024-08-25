@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container
+        {
+            border: 2px solid black;
+            display: grid;
+             background-color: rgb(11, 91, 238);;
+           align-content: center;
+           grid-template-columns: auto auto auto auto;
+           gap: 5px 5px;
+        }
+        .container div{
+            background-color: white;
+            border: 1px solid black;
+            padding: 5%;
+            text-align: center;
+            margin: 10px;
+        
+        }
+        .box1
+        {   
+            text-align: center;
+            grid-row:1/3
+        }
+        .box3
+        {
+            text-align: center;
+            grid-column: 3/6;
+        }
+     .box9
+        {
+            text-align: center;
+            grid-column:2/3;
+            grid-row:2/3;
+        }
+        .box10
+        {
+            text-align: center;
+            grid-column:2/3 ;
+            grid-row:3/5 ;
+        }
+        .box4
+        {
+            text-align: center;
+           
+            grid-column: 3/4;
+            grid-row:2/4;
+        }
+        .box5
+        {
+            text-align: center;
+            
+            grid-column:4/6 ;
+        }
+        .box6
+        {
+            text-align: center;
+          
+            grid-row:5
+        }
+        .box11
+        {
+            text-align: center;
+          
+            grid-column: 4/6;
+        }
+        .box14
+        {
+            text-align: center;
+            
+            
+            grid-column: 3/6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class= "container">
+    <div class="box1">Masonry</div>
+    <div class="box">responsive</div>
+    <div class="box3">overlap</div>
+    <div class="box4">Explictiy Placed</div>
+    <div class="box5">5</div>
+   
+    
+    <div class="box7">Flexible Breadth</div>
+    <div class="box9">Fluid</div>
+    <div class="box10">Masonry-II</div>
+    <div class="box11">11</div>
+ 
+    <div class="box0">DOM order</div>
+    <div class="box14">Named tracks</div>
+   
+  
+</body>
+</html>
